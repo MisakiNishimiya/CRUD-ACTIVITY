@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.2em; /* Increased overall font size for zoom */
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px; /* Further increased padding for more space */
+    border-radius: 20px; /* Slightly larger rounded corners */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07); /* Slightly stronger shadow */
+    width: 95%; /* Further increased width */
+    max-width: 800px; /* Further increased max-width */
+    margin: 40px; /* Further increased margin */
+}
+
+/* Header Styles */
+.header {
+    background-color: #ff9ad3;
+    color: white;
+    padding: 20px 25px; /* Increased padding in the header */
+    border-radius: 20px 20px 0 0; /* Adjusted rounded corners to match container */
+    text-align: center;
+    margin-bottom: 25px; /* Increased margin at the bottom */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.7em; /* Increased header font size */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    margin-bottom: 25px; /* Increased margin below the form */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px; /* Increased padding for the input */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Slightly more rounded input */
+    font-size: 1.1em; /* Increased font size in the input */
+}
+
+button {
+    background-color: #fb9fd3;
+    color: white;
+    padding: 15px 20px; /* Increased padding for the button */
+    border: none;
+    border-radius: 20px; /* Matching rounded corners */
+    cursor: pointer;
+    font-size: 1.1em; /* Increased font size on the button */
+    margin-left: 15px; /* Increased margin to separate from input */
+    transition: background-color 0.3s ease;
+    min-width: 140px; /* Increased minimum width */
+}
+
+button:hover {
+    background-color: #f686c6;
+}
+
+/* Task List Styles */
+.todo-list {
+    margin-top: 25px; /* Increased margin above the list */
+}
+
+.todo-item {
+    background-color: #fff;
+    padding: 15px; /* Increased padding for list items */
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em; /* Increased font size for list items */
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.task {
+    flex: 1;
+    margin-right: 15px; /* Increased margin to the right of the task text */
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Actions Styles */
+.todo-actions {
+    display: flex;
+    gap: 10px; /* Slightly increased gap */
+}
+
+.todo-actions a {
+    text-decoration: none;
+    color: #777;
+    font-size: 1em; /* Increased action link font size */
+    padding: 7px 12px; /* Adjusted padding */
+    border-radius: 7px; /* Adjusted rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.todo-actions a:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.todo-actions a[href*="delete"] {
+    color: #d9534f; /* Red for "Delete" */
+}
